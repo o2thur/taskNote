@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/6290499b5f.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&display=swap" rel="stylesheet">
+    <title>takenote</title>
+</head>
+
+<body>
+    <section id="taskSection">
+        <div id="taskCard">
+            <div id="taskHeader">
+                <div id="taskHeaderLeft">
+                    <div>
+                        <h1>Tasks List</h1>
+                    </div>
+                    <div class="specialDiv">
+                        <i class="fa-solid fa-check favorites"></i>
+                        <p class="favorites" id="seeChecked">See checked</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <p class="switcher">Switch to note</p>
+                    </div>
+                </div>
+            </div>
+            <div id="taskAdd">
+                <input type="text" placeholder="Type your task here..." id="taskInput">
+                <input type="date" id="taskDeadline" min=>
+                <button class="addUpdateButton">Add</button>
+            </div>
+            <div id="taskList">
+
+            </div>
+        </div>
+    </section>
+    <section id="noteSection">
+        <div id="noteCard">
+            <div id="noteHeader">
+                <div id="noteHeaderLeft">
+                    <div>
+                        <h1>Daily Notes</h1>
+                    </div>
+                    <div class="specialDiv">
+                        <i class="fa-solid fa-star favorites"></i>
+                        <p class="favorites" id="seeFavorites">See favorites</p>
+                    </div>
+                </div>
+                <div>
+                    <p class="switcher">Switch to tasks</p>
+                </div>
+            </div>
+            <div id="noteAdd">
+                <input type="text" placeholder="Type your note here..." id="noteInput">
+                <select name="noteCategory" id="noteCategory">
+                    <option value="" disabled selected>Category:</option>
+                    <option value="study">Study</option>
+                    <option value="quote">Quote</option>
+                    <option value="idea">Idea</option>
+                </select>
+                <button class="addUpdateButton">Add</button>
+            </div>
+            <div id="noteList">
+
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

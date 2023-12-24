@@ -1,0 +1,140 @@
+body {
+    background-color: #173e78;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+#noteSection {
+    display: none;
+    justify-content: center;
+}
+
+#taskSection {
+    display: flex;
+    justify-content: center;
+}
+
+#taskCard,
+#noteCard {
+    background-color: white;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px 30px 30px;
+    border-radius: 20px;
+}
+
+#taskHeader,
+#noteHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#noteHeaderLeft,
+#taskHeaderLeft {
+    display: flex;
+    flex-direction: row;
+}
+
+#noteHeaderLeft div:last-child,
+#taskHeaderLeft div:last-child {
+    display: flex;
+    align-items: center;
+    margin: 0 10px
+}
+
+.favorites {
+    cursor: pointer;
+    margin: 0 2px;
+    font-size: 12px;
+    color: #4B644A;
+}
+
+p.favorites {
+    font-weight: 400;
+}
+
+.fa-solid {
+    color: #4B644A;
+}
+
+.switcher {
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 400;
+    color: #4B644A;
+}
+
+#taskAdd,
+#noteAdd {
+    display: flex;
+    flex-direction: row;
+}
+
+#taskInput,
+#noteInput {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+#taskDeadline,
+#noteCategory {
+    background-color: #fff;
+    padding: 0 10px;
+    border: none;
+    margin: 10px
+}
+
+.addUpdateButton {
+    background-color: #4B644A;
+    border: 1px solid #ccc;
+    padding: 0 25px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#taskList,
+#noteList {
+    display: flex;
+    flex-direction: column;
+}
+
+.taskListItem,
+.noteListItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #000;
+    padding: 25px 0;
+}
+
+.taskListItem div,
+.noteListItem div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.taskEdit,
+.taskCheck,
+.taskListItem div p,
+.noteStar,
+.noteEdit,
+.noteListItem div p {
+    margin-right: 10px;
+}
+
+i {
+    cursor: pointer;
+}
+
+.checked {
+    text-decoration: line-through;
+    color: #ccc;
+}
