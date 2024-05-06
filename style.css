@@ -1,8 +1,8 @@
 body {
-    background-color: #173e78;
+    background-color: white;
     color: black;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 #noteSection {
@@ -48,12 +48,12 @@ body {
 .favorites {
     cursor: pointer;
     margin: 0 2px;
-    font-size: 12px;
+    font-size: 14px;
     color: #4B644A;
 }
 
 p.favorites {
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .fa-solid {
@@ -97,6 +97,11 @@ p.favorites {
     color: #fff;
     cursor: pointer;
     font-weight: bold;
+    transition: .2s ease-in
+}
+
+.addUpdateButton:hover {
+    background-color: #678066;
 }
 
 #taskList,
